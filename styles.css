@@ -1,0 +1,240 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Tomato: hsl(4, 100%, 67%);
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--Charcoal-Grey);
+}
+
+body {
+  background-color: var(--Charcoal-Grey);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: var(--White);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.signUpForm {
+  background-color: var(--White);
+  display: flex;
+  padding: 1rem;
+}
+
+.formContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+  max-width: 450px;
+}
+
+.abstractImgDesktop {
+  display: none;
+}
+
+.abstractImgMobile {
+  width: 100%;
+  height: auto;
+}
+
+.signUpClear {
+  display: none;
+}
+
+.hero,
+.thanks {
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+
+.heading {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.updateList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.updateList li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.updateList li::before {
+  content: "\2714"; /* Unicode checkmark character */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.4rem; /* Size of the checkmark */
+  font-weight: 700;
+  color: var(--White);
+  background-color: var(--Tomato);
+  padding: 0.3rem;
+  border-radius: 50%;
+}
+
+.form-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.form-control {
+  font-size: 0.75rem;
+  line-height: 2;
+  color: var(--Grey);
+}
+
+.form-control:focus {
+  border: 1px solid var(--Dark-Slate-Grey);
+  box-shadow: none;
+}
+
+.subBtn,
+.dismissBtn {
+  width: 100%;
+  font-size: 0.75rem;
+  line-height: 2.5;
+  font-weight: 700;
+  background-color: var(--Dark-Slate-Grey);
+  border: var(--Dark-Slate-Grey);
+  transition: background-image 0.3s ease;
+}
+
+.subBtn:hover,
+.dismissBtn:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to right, var(--Tomato), #feb47b);
+}
+
+/* Success Page */
+.check {
+  position: relative;
+  top: 0;
+  font-size: 10rem; /* Size of the checkmark */
+  font-weight: 700;
+  color: var(--White);
+  background-color: var(--Tomato);
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.thanks {
+  margin-top: 2rem;
+}
+
+.thanksText {
+  margin-top: 2rem;
+}
+
+.dismissBtn {
+  margin-top: 13rem;
+}
+
+/* Deskop Specific Styles */
+
+@media (min-width: 376px) {
+  .signUpClear {
+    display: none;
+    max-width: 20rem;
+    background-color: var(--White);
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+
+  .dismissBtn {
+    margin-top: 3rem;
+  }
+
+  .abstractImgDesktop {
+    display: block;
+    display: flex;
+    width: 20rem;
+    height: auto;
+  }
+
+  .abstractImgMobile {
+    display: none;
+  }
+
+  .signUpForm {
+    background-color: var(--White);
+    display: flex;
+    border-radius: 2rem;
+    padding: 1rem;
+  }
+
+  main {
+    background-color: var(--Charcoal-Grey);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+
+  .formContent {
+    padding: 0 3rem;
+  }
+
+  .hero,
+  .thanks {
+    font-weight: 700;
+    font-size: 3rem;
+  }
+
+  .heading {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile Specific Styles */
+
+@media (max-width: 376px) {
+  .signUpClear {
+    padding: 2rem;
+  }
+
+  .signUpForm {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <script defer src="./scripts.js"></script>
+  </head>
+  <body>
+    <main id="main">
+      <!-- Sign-up form start -->
+      <img
+        class="abstractImgMobile"
+        id="abstractImgMobile"
+        src="./assets/images/illustration-sign-up-mobile.svg"
+        alt="abstract image of webpages"
+      />
+      <article class="signUpForm" id="signUpForm">
+        <div class="formContent">
+          <h1 class="hero">Stay updated!</h1>
+          <p class="heading">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ul class="updateList">
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="email@company.com"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary subBtn">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+
+        <!-- Image Section -->
+        <img
+          class="abstractImgDesktop"
+          src="./assets/images/illustration-sign-up-desktop.svg"
+          alt="abstract image of webpages"
+        />
+      </article>
+      <!-- Sign-up form end -->
+
+      <!-- Success message start -->
+      <article class="signUpClear" id="signUpClear">
+        <div class="check"></div>
+        <h1 class="thanks">Thanks for subscribing!</h1>
+        <p class="thanksText">
+          A confirmation email has been sent to
+          <strong class="userEmail">ash@loremcompany.com</strong>. Please open
+          it and click the button inside to confirm your subscription.
+        </p>
+        <button
+          type="submit"
+          id="dismissBtn"
+          class="btn btn-primary dismissBtn"
+        >
+          Dismiss message
+        </button>
+      </article>
+      <!-- Success message end -->
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
