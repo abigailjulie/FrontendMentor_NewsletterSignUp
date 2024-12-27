@@ -31,14 +31,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./assets/images/screenshot.JPG)
 
 Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
 ### Links
 
-- Solution URL: [(https://frontendmentornewslettersignup.vercel.app)]
-- Live Site URL: [(https://github.com/abigailjulie/FrontendMentor_NewsletterSignUp)]
+- Solution URL: [Github](https://github.com/abigailjulie/FrontendMentor_NewsletterSignUp)
+- Live Site URL: [Live Site](https://frontendmentornewslettersignup.vercel.app)
 
 ## My process
 
